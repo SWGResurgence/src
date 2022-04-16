@@ -351,8 +351,8 @@ void VeteranRewardManager::getTriggeredEventsIds(CreatureObject const & playerCr
 		return;
 	}
 
-	if (client->isUsingAdminLogin())
-		return;
+//	if (client->isUsingAdminLogin())
+//		return;
 
 	// Get list of reward events that have already been consumed or are being ignored
 	std::vector<std::string> consumedEventsString;
