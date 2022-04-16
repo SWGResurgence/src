@@ -351,8 +351,8 @@ void VeteranRewardManager::getTriggeredEventsIds(CreatureObject const & playerCr
 		return;
 	}
 
-//	if (client->isUsingAdminLogin())
-//		return false; 
+	if (client->isUsingAdminLogin())
+		return;
 
 	// Get list of reward events that have already been consumed or are being ignored
 	std::vector<std::string> consumedEventsString;
@@ -1422,8 +1422,8 @@ void VeteranRewardManager::announceMonthlyBonusBoosterPack(CreatureObject const 
 	if (!client)
 		return;
 
-//	if (client->isUsingAdminLogin())
-//		return false; 
+	if (client->isUsingAdminLogin())
+		return;
 
 	if (ConfigServerGame::getAccountFeatureIdForMonthlyBoosterPack() <= 0)
 		return;
@@ -1457,8 +1457,8 @@ void VeteranRewardManager::announceSwgTcgBeta(CreatureObject const & playerCreat
 	if (!client)
 		return;
 
-//	if (client->isUsingAdminLogin())
-//		return false; 
+	if (client->isUsingAdminLogin())
+		return;
 
 	Client::AccountFeatureIdList const & accountFeatureIds = client->getAccountFeatureIds();
 	Client::AccountFeatureIdList::const_iterator iterFind = accountFeatureIds.find(static_cast<uint32>(ConfigServerGame::getAccountFeatureIdForTcgBetaAnnouncement()));
