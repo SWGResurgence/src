@@ -491,7 +491,7 @@ void ConfigServerGame::install(void)
 
 	KEY_STRING  (serverLoadLevel, "heavy");
   
-  KEY_INT     (maxHousingLots, 10);
+  KEY_INT     (maxHousingLots, 20);
 
 	if (data->baseDecayRate <= 1.0f)
 		data->baseDecayRate = 1.0f;
