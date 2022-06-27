@@ -115,7 +115,7 @@ jboolean JNICALL ScriptMethodsVeteranNamespace::veteranAccountFeatureIdRequest(J
 	if (playerCreature)
 	{
 		Client * const client = playerCreature->getClient();
-		if (client && !client->isUsingAdminLogin())
+		if (client)
 		{
 			AccountFeatureIdRequest const req(playerCreature->getNetworkId(), GameServer::getInstance().getProcessId(), playerCreature->getNetworkId(), static_cast<StationId>(client->getStationId()), PlatformGameCode::SWG, AccountFeatureIdRequest::RR_ReloadRewardCheck);
 			client->sendToConnectionServer(req);

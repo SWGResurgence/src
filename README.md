@@ -1,4 +1,4 @@
-# Star Wars Galaxies Source Code (C++) Repository
+# Star Wars Galaxies Source Code (C++) Repository 
 
 This is the main server code for SWGSource 1.2 as originally forked from the https://bitbucket.org/stellabellumswg/ repository.  Please see that repository for original publication and alteration credit.
 
