@@ -1361,6 +1361,8 @@ void PvpNamespace::loadGcwScoreCategoryTable()
 	s_gcwScoreDefaultCategoryForPlanet["space_lok"] = Pvp::getGcwScoreCategory("gcw_region_lok_14");
 	s_gcwScoreDefaultCategoryForPlanet["space_naboo"] = Pvp::getGcwScoreCategory("gcw_region_naboo_14");
 	s_gcwScoreDefaultCategoryForPlanet["space_yavin4"] = Pvp::getGcwScoreCategory("gcw_region_yavin4_18");
+  s_gcwScoreDefaultCategoryForPlanet["dxun"] = Pvp::getGcwScoreCategory("gcw_region_dxun_15");
+  s_gcwScoreDefaultCategoryForPlanet["space_dxun"] = Pvp::getGcwScoreCategory("gcw_region_dxun_16");
 }
 
 // ======================================================================
