@@ -249,11 +249,6 @@ namespace LfgDataTableNamespace
 	{
 		return (lfgCharacterData.species == SharedCreatureObjectTemplate::SP_human);
 	}
-  
-  bool matchSpeciesMandalorian(LfgCharacterData const & lfgCharacterData, void const *, void const *, void const *, void const *, void const *)
-  {
-    return (lfgCharacterData.species == SharedCreatureObjectTemplate::SP_Mandalorian);
-  }
 
 	bool matchSpeciesIthorian(LfgCharacterData const & lfgCharacterData, void const *, void const *, void const *, void const *, void const *)
 	{

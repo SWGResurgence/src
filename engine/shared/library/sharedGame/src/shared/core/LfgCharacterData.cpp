@@ -725,8 +725,6 @@ std::string LfgCharacterData::getDebugString() const
 		output += "Wookiee";
 	else if (species == SharedCreatureObjectTemplate::SP_zabrak)
 		output += "Zabrak";
-  else if (species == SharedCreatureObjectTemplate::SP_mandalorian)
-    output += "Mandalorian";
 	else
 		output += FormattedString<32>().sprintf("%d", static_cast<int>(species));
  
@@ -906,7 +904,6 @@ std::map<std::string, int> const & LfgCharacterData::calculateStatistics(std::ma
 		statistics[s_stat_twilek] = 0;
 		statistics[s_stat_wookiee] = 0;
 		statistics[s_stat_zabrak] = 0;
-    statistics[s_stat_mandalorian] = 0;
 
 		// species by gender
 		statistics[s_stat_species_gender_section] = -1;
@@ -930,8 +927,6 @@ std::map<std::string, int> const & LfgCharacterData::calculateStatistics(std::ma
 		statistics[s_stat_wookiee_f] = 0;
 		statistics[s_stat_zabrak_m] = 0;
 		statistics[s_stat_zabrak_f] = 0;
-    statistics[s_stat_mandalorian_m] = 0;
-    statistics[s_stat_mandalorian_f] = 0;
 
 		// profession
 		statistics[s_stat_profession_section] = -1;
@@ -1288,15 +1283,6 @@ std::map<std::string, int> const & LfgCharacterData::calculateStatistics(std::ma
 			else if (iterLfgData->second.gender == SharedCreatureObjectTemplate::GE_female)
 				++(statistics[s_stat_zabrak_f]);
 		}
-    else if (iterLfgData->second.species == SharedCreatureObjectTemplate::SP_Mandalorian)
-    {
-      ++(statistics[s_stat_mandalorian]);
-      
-      if (iterLfgData->second.gender == SharedCreatureObjectTemplate::GE_male)
-        ++(statistics[s_stat_mandalorian_m]);
-      else if (iterLfgData->second.gender == SharedCreatureObjectTemplate::GE_female)
-        ++(statistics[s_stat_mandalorian_f]);
-    }
 
 		// profession and profession by gender
 		if (iterLfgData->second.profession == LfgCharacterData::Prof_Bh)
