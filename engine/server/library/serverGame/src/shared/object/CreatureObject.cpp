@@ -8955,6 +8955,7 @@ bool CreatureObject::isAppearanceEquippable(const char *appearanceTemplateName)
 			case SharedCreatureObjectTemplate::SP_bothan:      { column = 15; } break;
 			case SharedCreatureObjectTemplate::SP_ithorian:    { column = 17; } break;
 			case SharedCreatureObjectTemplate::SP_sullustan:   { column = 19; } break;
+      case SharedCreatureObjectTemplate::SP_mandalorian: { column = 21; } break;
 			default: { } break;
 		}
 
