@@ -195,6 +195,66 @@ namespace LfgCharacterDataNamespace
 	std::string const s_stat_level_90_imperial(s_stat_level_90 + ".imperial");
 	std::string const s_stat_level_90_neutral(s_stat_level_90 + ".neutral");
 	std::string const s_stat_level_90_rebel(s_stat_level_90 + ".rebel");
+  std::string const s_stat_level_91(s_stat_level_section + ".91");
+	std::string const s_stat_level_91_imperial(s_stat_level_91 + ".imperial");
+	std::string const s_stat_level_91_neutral(s_stat_level_91 + ".neutral");
+	std::string const s_stat_level_91_rebel(s_stat_level_91 + ".rebel");
+  std::string const s_stat_level_92(s_stat_level_section + ".92");
+	std::string const s_stat_level_92_imperial(s_stat_level_92 + ".imperial");
+	std::string const s_stat_level_92_neutral(s_stat_level_92 + ".neutral");
+	std::string const s_stat_level_92_rebel(s_stat_level_92 + ".rebel");
+  std::string const s_stat_level_93(s_stat_level_section + ".93");
+	std::string const s_stat_level_93_imperial(s_stat_level_93 + ".imperial");
+	std::string const s_stat_level_93_neutral(s_stat_level_93 + ".neutral");
+	std::string const s_stat_level_93_rebel(s_stat_level_93 + ".rebel");
+  std::string const s_stat_level_94(s_stat_level_section + ".94");
+	std::string const s_stat_level_94_imperial(s_stat_level_94 + ".imperial");
+	std::string const s_stat_level_94_neutral(s_stat_level_94 + ".neutral");
+	std::string const s_stat_level_94_rebel(s_stat_level_94 + ".rebel");
+  std::string const s_stat_level_95(s_stat_level_section + ".95");
+	std::string const s_stat_level_95_imperial(s_stat_level_95 + ".imperial");
+	std::string const s_stat_level_95_neutral(s_stat_level_95 + ".neutral");
+	std::string const s_stat_level_95_rebel(s_stat_level_95 + ".rebel");
+  std::string const s_stat_level_96(s_stat_level_section + ".96");
+	std::string const s_stat_level_96_imperial(s_stat_level_96 + ".imperial");
+	std::string const s_stat_level_96_neutral(s_stat_level_96 + ".neutral");
+	std::string const s_stat_level_96_rebel(s_stat_level_96 + ".rebel");
+  std::string const s_stat_level_97(s_stat_level_section + ".97");
+	std::string const s_stat_level_97_imperial(s_stat_level_97 + ".imperial");
+	std::string const s_stat_level_97_neutral(s_stat_level_97 + ".neutral");
+	std::string const s_stat_level_97_rebel(s_stat_level_97 + ".rebel");
+  std::string const s_stat_level_98(s_stat_level_section + ".98");
+	std::string const s_stat_level_98_imperial(s_stat_level_98 + ".imperial");
+	std::string const s_stat_level_98_neutral(s_stat_level_98 + ".neutral");
+	std::string const s_stat_level_98_rebel(s_stat_level_98 + ".rebel");
+  std::string const s_stat_level_99(s_stat_level_section + ".99");
+	std::string const s_stat_level_99_imperial(s_stat_level_99 + ".imperial");
+	std::string const s_stat_level_99_neutral(s_stat_level_99 + ".neutral");
+	std::string const s_stat_level_99_rebel(s_stat_level_99 + ".rebel");
+  std::string const s_stat_level_100(s_stat_level_section + ".100");
+	std::string const s_stat_level_100_imperial(s_stat_level_100 + ".imperial");
+	std::string const s_stat_level_100_neutral(s_stat_level_100 + ".neutral");
+	std::string const s_stat_level_100_rebel(s_stat_level_100 + ".rebel");
+  std::string const s_stat_level_101(s_stat_level_section + ".101");
+	std::string const s_stat_level_101_imperial(s_stat_level_101 + ".imperial");
+	std::string const s_stat_level_101_neutral(s_stat_level_101 + ".neutral");
+	std::string const s_stat_level_101_rebel(s_stat_level_101 + ".rebel");
+  std::string const s_stat_level_102(s_stat_level_section + ".102");
+	std::string const s_stat_level_102_imperial(s_stat_level_102 + ".imperial");
+	std::string const s_stat_level_102_neutral(s_stat_level_102 + ".neutral");
+	std::string const s_stat_level_102_rebel(s_stat_level_102 + ".rebel");
+  std::string const s_stat_level_103(s_stat_level_section + ".103");
+	std::string const s_stat_level_103_imperial(s_stat_level_103 + ".imperial");
+	std::string const s_stat_level_103_neutral(s_stat_level_103 + ".neutral");
+	std::string const s_stat_level_103_rebel(s_stat_level_103 + ".rebel");
+  std::string const s_stat_level_104(s_stat_level_section + ".104");
+	std::string const s_stat_level_104_imperial(s_stat_level_104 + ".imperial");
+	std::string const s_stat_level_104_neutral(s_stat_level_104 + ".neutral");
+	std::string const s_stat_level_104_rebel(s_stat_level_104 + ".rebel");
+  std::string const s_stat_level_90(s_stat_level_section + ".105");
+	std::string const s_stat_level_105_imperial(s_stat_level_105 + ".imperial");
+	std::string const s_stat_level_105_neutral(s_stat_level_105 + ".neutral");
+	std::string const s_stat_level_105_rebel(s_stat_level_105 + ".rebel");
 
 	// location planet
 	std::string const s_stat_location_section("location");
@@ -1012,6 +1072,51 @@ std::map<std::string, int> const & LfgCharacterData::calculateStatistics(std::ma
 		statistics[s_stat_level_90_imperial] = 0;
 		statistics[s_stat_level_90_neutral] = 0;
 		statistics[s_stat_level_90_rebel] = 0;
+    statistics[s_stat_level_91_imperial] = 0;
+    statistics[s_stat_level_91_neutral] = 0;
+    statistics[s_stat_level_91_rebel] = 0;
+    statistics[s_stat_level_92_imperial] = 0;
+    statistics[s_stat_level_92_neutral] = 0;
+    statistics[s_stat_level_92_rebel] = 0;
+    statistics[s_stat_level_93_imperial] = 0;
+    statistics[s_stat_level_93_neutral] = 0;
+    statistics[s_stat_level_93_rebel] = 0;
+    statistics[s_stat_level_94_imperial] = 0;
+    statistics[s_stat_level_94_neutral] = 0;
+    statistics[s_stat_level_94_rebel] = 0;
+    statistics[s_stat_level_95_imperial] = 0;
+    statistics[s_stat_level_95_neutral] = 0;
+    statistics[s_stat_level_95_rebel] = 0;
+    statistics[s_stat_level_96_imperial] = 0;
+    statistics[s_stat_level_96_neutral] = 0;
+    statistics[s_stat_level_96_rebel] = 0;
+    statistics[s_stat_level_97_imperial] = 0;
+    statistics[s_stat_level_97_neutral] = 0;
+    statistics[s_stat_level_97_rebel] = 0;
+    statistics[s_stat_level_98_imperial] = 0;
+    statistics[s_stat_level_98_neutral] = 0;
+    statistics[s_stat_level_98_rebel] = 0;
+    statistics[s_stat_level_99_imperial] = 0;
+    statistics[s_stat_level_99_neutral] = 0;
+    statistics[s_stat_level_99_rebel] = 0;
+    statistics[s_stat_level_100_imperial] = 0;
+    statistics[s_stat_level_100_neutral] = 0;
+    statistics[s_stat_level_100_rebel] = 0;
+    statistics[s_stat_level_101_imperial] = 0;
+    statistics[s_stat_level_101_neutral] = 0;
+    statistics[s_stat_level_101_rebel] = 0;
+    statistics[s_stat_level_102_imperial] = 0;
+    statistics[s_stat_level_102_neutral] = 0;
+    statistics[s_stat_level_102_rebel] = 0;
+    statistics[s_stat_level_103_imperial] = 0;
+    statistics[s_stat_level_103_neutral] = 0;
+    statistics[s_stat_level_103_rebel] = 0;
+    statistics[s_stat_level_104_imperial] = 0;
+    statistics[s_stat_level_104_neutral] = 0;
+    statistics[s_stat_level_104_rebel] = 0;
+    statistics[s_stat_level_105_imperial] = 0;
+    statistics[s_stat_level_105_neutral] = 0;
+    statistics[s_stat_level_105_rebel] = 0;
 
 		// location planet
 		statistics[s_stat_location_section] = -1;
@@ -1505,15 +1610,15 @@ std::map<std::string, int> const & LfgCharacterData::calculateStatistics(std::ma
 		}
 		else
 		{
-			++(statistics[s_stat_level_90]);
+			++(statistics[s_stat_level_105]);
 
 			// faction
 			if (PvpData::isImperialFactionId(iterLfgData->second.faction))
-				++(statistics[s_stat_level_90_imperial]);
+				++(statistics[s_stat_level_105_imperial]);
 			else if (PvpData::isRebelFactionId(iterLfgData->second.faction))
-				++(statistics[s_stat_level_90_rebel]);
+				++(statistics[s_stat_level_105_rebel]);
 			else if (PvpData::isNeutralFactionId(iterLfgData->second.faction))
-				++(statistics[s_stat_level_90_neutral]);
+				++(statistics[s_stat_level_105_neutral]);
 		}
 
 		// location planet
