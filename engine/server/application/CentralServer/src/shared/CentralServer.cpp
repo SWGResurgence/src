@@ -3173,6 +3173,9 @@ const bool getStartLocation(const std::string & name, std::string & planetName, 
 
 void CentralServer::startPlanetServer(const std::string & host, const std::string & sceneId, const SpawnDelaySeconds spawnDelay)
 {
+  
+  if(sceneId.empty())
+    return;
 	FATAL(sceneId.empty(), ("CentralServer::startPlanetServer: empty sceneId, host='%s'", host.c_str()));
 	std::map<std::string, std::pair<std::pair<std::string, std::string>, time_t> >::const_iterator f = m_pendingPlanetServers.find(sceneId);
 	if(f == m_pendingPlanetServers.end())
