@@ -44,7 +44,7 @@ bool GroupPickupPoint::isGroupPickupAllowedAtLocation(std::string const & planet
 		s_groupPickupAllowedLocation["kashyyyk_hunting"] = std::make_pair(std::make_pair(0, 0), std::make_pair(0, 0));
 		s_groupPickupAllowedLocation["kashyyyk_dead_forest"] = std::make_pair(std::make_pair(0, 0), std::make_pair(0, 0));
 		s_groupPickupAllowedLocation["mustafar"] = std::make_pair(std::make_pair(-6880, -1024), std::make_pair(1120, 6976)); // the "public" area of mustafar, from areas_mustafar.tab
-    s_groupPickupAllowedLocation["dxun"] = std::make_pair(std::make_pair(0, 0), std::make_pair(0, 0));
+		s_groupPickupAllowedLocation["dxun"] = std::make_pair(std::make_pair(0, 0), std::make_pair(0, 0));
 	}
 
 	std::map<std::string, std::pair<std::pair<int, int>, std::pair<int, int> > >::const_iterator iterFind = s_groupPickupAllowedLocation.find(planetName);
