@@ -337,7 +337,7 @@ void ConfigServerGame::install(void)
 	KEY_FLOAT   (lineOfSightCacheMinHeight, 0.8f);
 	KEY_FLOAT   (lineOfSightLocationRoundValue, 5.0f);
 
-	KEY_INT     (maxWaypointsPerCharacter,100); // Keep this in sync with the maxWaypoints value in ConfigClientGame.cpp
+	KEY_INT     (maxWaypointsPerCharacter,250); // Keep this in sync with the maxWaypoints value in ConfigClientGame.cpp
 	KEY_FLOAT   (maxSmallCreatureHeight, 0.7f);
 	KEY_FLOAT   (smallCreatureUpdateRadius, 64.0f);
 	KEY_FLOAT   (maxMediumCreatureHeight, 3.0f);
@@ -490,6 +490,8 @@ void ConfigServerGame::install(void)
 	KEY_BOOL    (useOldSuidGenerator, false);
 
 	KEY_STRING  (serverLoadLevel, "heavy");
+  
+  KEY_INT     (maxHousingLots, 20);
 
 	if (data->baseDecayRate <= 1.0f)
 		data->baseDecayRate = 1.0f;

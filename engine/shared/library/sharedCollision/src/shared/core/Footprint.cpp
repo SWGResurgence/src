@@ -185,7 +185,7 @@ void Footprint::reattachContacts ( void )
 
 		if(contact->m_contact.getId() != -1)
 		{
-			return;			
+			return;
 		}
 	}
 

@@ -351,9 +351,6 @@ void VeteranRewardManager::getTriggeredEventsIds(CreatureObject const & playerCr
 		return;
 	}
 
-	if (client->isUsingAdminLogin())
-		return;
-
 	// Get list of reward events that have already been consumed or are being ignored
 	std::vector<std::string> consumedEventsString;
 	getConsumedEvents(playerCreature,consumedEventsString);
@@ -1818,9 +1815,6 @@ bool RewardEvent::hasPlayerTriggered(CreatureObject const & playerCreature) cons
 	Client const * const client = playerCreature.getClient();
 	if (!client)
 		return false;
-
-	if (client->isUsingAdminLogin())
-		return false; // Admin logins don't trigger rewards
 
 	if (ConfigServerGame::getVeteranDebugTriggerAll())
 		return true;
