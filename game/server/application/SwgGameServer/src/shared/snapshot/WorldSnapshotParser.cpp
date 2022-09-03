@@ -50,6 +50,7 @@ namespace
 		IGNORE_RETURN (ms_planetMap.insert (std::make_pair (std::string ("corellia"),  new WorldSnapshotReaderWriter)));
 		IGNORE_RETURN (ms_planetMap.insert (std::make_pair (std::string ("dantooine"), new WorldSnapshotReaderWriter)));
 		IGNORE_RETURN (ms_planetMap.insert (std::make_pair (std::string ("dathomir"),  new WorldSnapshotReaderWriter)));
+		IGNORE_RETURN (ms_planetMap.insert (std::make_pair (std::string ("dxun"), 	   new WorldSnapshotReaderWriter)));
 		IGNORE_RETURN (ms_planetMap.insert (std::make_pair (std::string ("dungeon1"),  new WorldSnapshotReaderWriter)));
 		IGNORE_RETURN (ms_planetMap.insert (std::make_pair (std::string ("endor"),     new WorldSnapshotReaderWriter)));
 		IGNORE_RETURN (ms_planetMap.insert (std::make_pair (std::string ("lok"),       new WorldSnapshotReaderWriter)));
