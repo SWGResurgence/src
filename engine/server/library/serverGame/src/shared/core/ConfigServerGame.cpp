@@ -429,7 +429,7 @@ void ConfigServerGame::install(void)
 
 	KEY_BOOL    (disableCollectionServerFirstGrantForSecuredLogin, false);
 
-	KEY_INT     (locateStructureCommandIntervalSeconds, 24 * 60 * 60); // 24 hours
+	KEY_INT     (locateStructureCommandIntervalSeconds, 4 * 60 * 60); // 4 hours
 
 	KEY_INT     (locateVendorCommandIntervalSeconds, 15 * 60); // 15 minutes
 
