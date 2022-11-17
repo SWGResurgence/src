@@ -438,7 +438,7 @@ void ConfigServerGame::install(void)
 	KEY_BOOL    (allowIgnoreFreeCtsTimeRestriction, false);
 
 	KEY_INT     (groupPickupPointApprovalRangeSquared, 20 * 20);
-	KEY_INT     (groupPickupPointTimeLimitSeconds, 5 * 60);
+	KEY_INT     (groupPickupPointTimeLimitSeconds, 2 * 60);
 	KEY_INT     (groupPickupTravelPlayerCityPercent, 10);
 
 	KEY_BOOL    (groupInviteInviterCombatRestriction, false);
