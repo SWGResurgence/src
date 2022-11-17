@@ -122,7 +122,7 @@ void ConfigServerGame::install(void)
 	KEY_STRING  (pvpUnattackableFactionsFilename, "datatables/pvp/faction_unattackable.iff");
 	KEY_STRING  (pvpBountyTargetFactionsFilename, "datatables/pvp/faction_bountytarget.iff");
 	KEY_BOOL    (createAppearances,true);
-	KEY_STRING  (adminAccountDataTable, "datatables/admin/stella_admin.iff");
+	KEY_STRING  (adminAccountDataTable, "datatables/admin/apotheosis.iff");
 	KEY_BOOL    (adminGodToAll, false);
 	KEY_INT     (adminGodToAllGodLevel, 0);
 	KEY_BOOL    (useSecureLoginForGodAccess, false);
@@ -429,7 +429,7 @@ void ConfigServerGame::install(void)
 
 	KEY_BOOL    (disableCollectionServerFirstGrantForSecuredLogin, false);
 
-	KEY_INT     (locateStructureCommandIntervalSeconds, 24 * 60 * 60); // 24 hours
+	KEY_INT     (locateStructureCommandIntervalSeconds, 4 * 60 * 60); // 4 hours
 
 	KEY_INT     (locateVendorCommandIntervalSeconds, 15 * 60); // 15 minutes
 

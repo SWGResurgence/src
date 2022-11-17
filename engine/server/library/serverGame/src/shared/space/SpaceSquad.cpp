@@ -117,11 +117,10 @@ SpaceSquad::~SpaceSquad()
 
 	// Tell all the squads guarding me that I am not longer guardable
 
-	SpaceSquadList::iterator iterGuardedByList = m_guardedByList->begin();
-
-	for (; iterGuardedByList != m_guardedByList->end(); ++iterGuardedByList)
+	for (SpaceSquadList::iterator it = m_guardedByList->begin(), next_it = it; it != m_guardedByList->end(); it = next_it)
 	{
-		(*iterGuardedByList)->removeGuardTarget();
+		++next_it;
+		(*it)->removeGuardTarget();
 	}
 
 	delete m_guardedByList;
