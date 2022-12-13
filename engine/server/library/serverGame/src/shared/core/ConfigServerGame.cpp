@@ -85,7 +85,7 @@ void ConfigServerGame::install(void)
 	KEY_INT     (minDrainValue,  1);
 	KEY_INT     (minEffectiveFaucetValue, 150);
 	KEY_FLOAT   (defaultHealthRegen, 40.0f);
-	KEY_FLOAT   (defaultActionRegen, 20.0f);
+	KEY_FLOAT   (defaultActionRegen, 30.0f);
 	KEY_FLOAT   (defaultMindRegen, 10.0f);
 	KEY_FLOAT   (regenThreshold, 1.0f);
 	KEY_FLOAT   (minForcePowerRegenRate, 1.0f);
