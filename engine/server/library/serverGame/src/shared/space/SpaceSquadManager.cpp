@@ -153,7 +153,7 @@ void SpaceSquadManager::alter(float const deltaTime)
             verifySquads();
         #endif // _DEBUG
     }
-	/*SquadList::iterator iterSquadList = s_squadList.begin();
+	SquadList::iterator iterSquadList = s_squadList.begin();
 
 	for (; iterSquadList != s_squadList.end();)
 	{
@@ -177,7 +177,7 @@ void SpaceSquadManager::alter(float const deltaTime)
 #ifdef _DEBUG
 	verifySquads();
 #endif // _DEBUG
-}*/
+}
 
 // ----------------------------------------------------------------------
 int SpaceSquadManager::createSquadId()
