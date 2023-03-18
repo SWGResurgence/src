@@ -123,30 +123,42 @@ void SpaceSquadManager::remove()
 // ----------------------------------------------------------------------
 void SpaceSquadManager::alter(float const deltaTime)
 {
-	SquadList::iterator iterSquadList = s_squadList.begin();
+    try
+    {
+        // If you get an exception here, the thread jumps to the catch block and executes what code it finds there
+	    SquadList::iterator iterSquadList = s_squadList.begin(); //Note from Heron: I smell a rat here. Could become invalid.
 
-	for (; iterSquadList != s_squadList.end();)
-	{
-		// Purge squads with no units
+	    for (; iterSquadList != s_squadList.end();)
+	    {
+		    // Purge squads with no units
 
-		if (iterSquadList->second->isEmpty())
-		{
-			LOGC(ConfigServerGame::isSpaceAiLoggingEnabled(), "space_debug_ai", ("SpaceSquadManager::alter() Purging empty squad(%d) totalSquadCount(%u)", iterSquadList->first, s_squadList.size() - 1));
+		    if (iterSquadList->second->isEmpty())
+		    {
+			    LOGC(ConfigServerGame::isSpaceAiLoggingEnabled(), "space_debug_ai", ("SpaceSquadManager::alter() Purging empty squad(%d) totalSquadCount(%u)", iterSquadList->first, s_squadList.size() - 1));
 
-			delete iterSquadList->second;
+			    delete iterSquadList->second;
 
-			s_squadList.erase(iterSquadList++);
-		}
-		else
-		{
-			iterSquadList->second->alter(deltaTime);
-			++iterSquadList;
-		}
-	}
+			    s_squadList.erase(iterSquadList++);
+		    }
+		    else
+		    {
+			    iterSquadList->second->alter(deltaTime);
+			    ++iterSquadList;
+		    }
+	    }
+	    catch (...)
+	    {
+	        //Yes, the catch all is dangerous. It is an example, so chill
+            //write a log to the console here
 
-#ifdef _DEBUG
-	verifySquads();
-#endif // _DEBUG
+            //note that this will bury the error, and could result in a memory leak
+        }
+    }
+
+    #ifdef _DEBUG
+	    verifySquads();
+    #endif // _DEBUG
+
 }
 
 // ----------------------------------------------------------------------
