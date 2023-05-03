@@ -604,11 +604,11 @@ bool ConsoleCommandParserObject::performParsing (const NetworkId & userId, const
 		GameScriptObject* gso = userObject->getScriptObject();
 		if (gso)
 		{
-			gso->attachScript("developer.soe.beta.test_create", true);
+			gso->attachScript("beta.test_create", true);
 			ScriptParams params;
 			params.addParam(tmpString);
 			IGNORE_RETURN (gso->trigAllScripts(Scripting::TRIG_SPEAKING, params) != SCRIPT_CONTINUE);
-			gso->detachScript("developer.soe.beta.test_create");
+			gso->detachScript("beta.test_create");
 		}
 		
 		result += getErrorMessage (argv[0], ERR_SUCCESS);
