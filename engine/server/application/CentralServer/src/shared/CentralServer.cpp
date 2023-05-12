@@ -3885,7 +3885,7 @@ void CentralServer::checkShutdownProcess()
 		m_shutdownPhase = 2;
 		lastWarn = m_curTime;
 	}
-	// Phase 2 is broadcasting a system message every 300 sec while we wait for time to expire
+	// Phase 2 is broadcasting a system message every 60sec while we wait for time to expire
 	else if( m_shutdownPhase == 2 )
 	{
 		if(  m_curTime >= m_shutdownTotalTime)
@@ -3898,9 +3898,8 @@ void CentralServer::checkShutdownProcess()
 
 
 		}
-		// broadcast warning message to players every 300 sec.
-		else if( m_curTime >= lastWarn+300 )
-		// broadcast warning message to players every 300 sec.
+		// broadcast warning message to players every 60sec.
+		else if( m_curTime >= lastWarn+60 )
 		{
 			char strTimeLeft[1024];
 			uint32 timeLeft = m_shutdownTotalTime - m_curTime;
