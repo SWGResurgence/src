@@ -165,7 +165,7 @@ void ConfigSharedGame::install()
 	bool defaultDisplayBadStringIds = true;
 
 	KEY_BOOL   (displayBadStringIds,     defaultDisplayBadStringIds);
-	KEY_INT    (maxCreatureSkillModBonus, 36);
+	KEY_INT    (maxCreatureSkillModBonus, 37);
 	KEY_BOOL   (imageDesignerVerboseOutput, false);
 	KEY_INT    (imageDesignerCosmeticSessionTimeSeconds, 0);
 	KEY_INT    (imageDesignerPhysicalSessionTimeSeconds, 0);
