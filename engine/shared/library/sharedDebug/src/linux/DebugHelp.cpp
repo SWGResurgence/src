@@ -578,7 +578,7 @@ SymbolCache::SymbolInfo const &SymbolCache::lookup(void const *addr)
 		return (*i).second;
 
 	// allow for running out of the fixed memory pool and recover gracefully
-	for (int tries = 0; tries < 2; ++tries)
+	for (int tries = 0; tries < 10; ++tries)
 	{
 		try
 		{
