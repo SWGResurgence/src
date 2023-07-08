@@ -175,7 +175,7 @@ SpaceSquad * SpaceSquadManager::createSquad()
 // ----------------------------------------------------------------------
 SpaceSquad * SpaceSquadManager::createSquad(int const squadId)
 {
-	FATAL((s_squadList.find(squadId) != s_squadList.end()), ("Trying to create a squad(%d) that already exists.", squadId));
+	DEBUG_WARNING((s_squadList.find(squadId) != s_squadList.end()), ("Trying to create a squad(%d) that already exists.", squadId));
 
 	SpaceSquad * const squad = new SpaceSquad;
 
